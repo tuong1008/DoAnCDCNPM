@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<form id="myForm" name="myForm">
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-2">Mua/bán</div>
+            <div class="col-4">
+                <select id="loaiGD">
+                    <option value="M">Mua</option>
+                    <option value="B">Bán</option>
+                </select>
+            </div>
+            <div class="col-2">Mã CK</div>
+            <div class="col-4"><input type="text" name="maCP" id="maCP" ></div>
+        </div>
+        <div class="row">
+            <div class="col-2">Lệnh</div>
+            <div class="col-4"><input type="text" name="loaiLenh" id="loaiLenh" value="LO" disabled readonly></div>
+            <div class="col-2">Khối lượng</div>
+            <div class="col-4"><input type="text" name="soLuong" id="soLuong" ></div>
+        </div>
+        <div class="row">
+            <div class="col-2">Giá</div>
+            <div class="col-4"><input type="text" name="giaDat" id="giaDat" ></div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-6">
+                <button type="button" id="myButton">Đặt Lệnh</button>
+            </div>
+        </div>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Mã Cổ  Phiếu</th>
+            <th>Ngày Đặt</th>
+            <th>Loại Giao Dịch</th>
+            <th>Loại Lệnh</th>
+            <th>Số Lượng</th>
+            <th>Giá Đặt</th>
+            <th>Trạng Thái lệnh</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody">
+
+    </tbody>
+</table>
+
